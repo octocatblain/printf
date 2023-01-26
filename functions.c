@@ -54,10 +54,10 @@ for (i = 0; str[i]; i++)
 if ((str[i] < 32 && str[i] > 0) || str[i] >= 127)
 {
 _putchar('\\');
--putchar('x');
+_putchar('x');
 if (i < 16)
 _putchar('0');
-print_unsignedIntToHex(str[i], 'A');
+print_unsigned(str[i], 'A');
 }
 else
 _putchar(str[i]);
